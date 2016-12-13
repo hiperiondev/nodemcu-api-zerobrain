@@ -1,0 +1,6 @@
+{
+  "name": "NodeMCU-API-Zerobrain",
+  "tagline": "NodeMCU API for ZeroBrain IDE",
+  "body": "# **NodeMCU API for ZeroBrain IDE** #\r\n\r\n[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/hiperiondev/nodemcu-api-zerobrain/blob/master/LICENSE)\r\n[![Version](https://img.shields.io/badge/version-v0.1-blue.svg)](https://github.com/hiperiondev/nodemcu-api-zerobrain/)\r\n[![Join the chat at https://gitter.im/nodemcu/nodemcu-firmware](https://img.shields.io/gitter/room/badges/shields.svg)](https://gitter.im/nodemcu/nodemcu-firmware?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\r\n[![Forum](https://img.shields.io/badge/forum-esp8266.com-blue.svg)](http://www.esp8266.com/viewtopic.php?f=22&t=12777)\r\n\r\n\r\n# Objective\r\nThe goal of this project is create a complete develope IDE for NodeMCU.\r\n\r\n### Summary\r\n- Autocompletation\r\n\r\n### To do\r\n- Correct documentation in api files\r\n- Correct args and returns in api files \r\n\r\n### Future features\r\n- Upload files to NodeMCU\r\n- Compile using cross compiler for NodeMCU",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
