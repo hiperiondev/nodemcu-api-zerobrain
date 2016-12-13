@@ -1,3 +1,8 @@
+-- Author: Emiliano Gonzalez [ egonzalez@hiperion.com.ar ]
+-- Licence: MIT [ https://opensource.org/licenses/MIT ]
+-- Date: 13 Dic 2016
+-- Version: 0.1
+
 return {
   tsl2561 = {
     type = "lib",
