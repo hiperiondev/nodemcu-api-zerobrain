@@ -7,7 +7,6 @@ return {
   wifi = {
     type = "lib",
     childs = {
-
       getchannel = {
         type = "function",
         description = "Gets the current WiFi channel.",
@@ -163,6 +162,110 @@ return {
             type = "function",
             description = "Gets the current status in station mode.",
             returns = "number： 0~5 , - 0: STA_IDLE, , - 1: STA_CONNECTING, , - 2: STA_WRONGPWD, , - 3: STA_APNOTFOUND, , - 4: STA_FAIL, , - 5: STA_GOTIP. , ####wifi.ap Module",
+          },
+        },
+      },
+      ap = {
+        type = "function",
+        childs = {
+          config = {
+            type = "function",
+            description = "",
+            returns = "",
+          },
+
+          deauth = {
+            type = "function",
+            description = "",
+            returns = "",
+          },
+
+          getbroadcast= {
+            type = "function",
+            description = "",
+            returns = "",
+          },
+
+          getclient= {
+            type = "function",
+            description = "",
+            returns = "",
+          },
+
+          getconfig= {
+            type = "function",
+            description = "",
+            returns = "",
+          },
+
+          getdefaultconfig= {
+            type = "function",
+            description = "",
+            returns = "",
+          },
+
+          getip= {
+            type = "function",
+            description = "",
+            returns = "",
+          },
+
+          getmac= {
+            type = "function",
+            description = "",
+            returns = "",
+          },
+
+          setip= {
+            type = "function",
+            description = "",
+            returns = "",
+          },
+
+          setmac= {
+            type = "function",
+            description = "",
+            returns = "",
+          },
+
+          dhcp = {
+            config= {
+              type = "function",
+              description = "",
+              returns = "",
+            },
+
+            start= {
+              type = "function",
+              description = "",
+              returns = "",
+            },
+
+            stop= {
+              type = "function",
+              description = "",
+              returns = "",
+            },
+
+          },
+          eventmon = {
+            register= {
+              type = "function",
+              description = "",
+              returns = "",
+            },
+
+            unregister= {
+              type = "function",
+              description = "",
+              returns = "",
+            },
+
+            reason= {
+              type = "function",
+              description = "",
+              returns = "",
+            },
           },
         },
       },
