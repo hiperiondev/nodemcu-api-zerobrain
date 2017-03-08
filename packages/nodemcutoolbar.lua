@@ -14,18 +14,26 @@ return {
     local menu = ide:FindTopMenu("&Project")
 
     local zoomMenu = ide:MakeMenu {
-      {991, TR("Item 1")..KSC(991), TR("Function Item 1"), wx.wxITEM_CHECK},
-      {992, TR("Item 2")..KSC(992), TR("Function Item 2"), wx.wxITEM_CHECK},
+      {901, TR("Restart MCU after upload")..KSC(901), TR("Restart MCU after upload"), wx.wxITEM_CHECK},
+      {902, TR("Cross compile before upload")..KSC(902), TR("Cross compile before upload"), wx.wxITEM_CHECK},
       {0, TR("")..KSC(0), TR(""), wx.wxITEM_SEPARATOR},
-      {993, TR("Upload Actual File")..KSC(993), TR("Upload Actual File")},
-      {994, TR("Upload Project")..KSC(994), TR("Upload Project")},
+      {903, TR("Upload Actual File")..KSC(903), TR("Upload Actual File")},
+      {904, TR("Upload Project")..KSC(904), TR("Upload Project")},
+      {0, TR("")..KSC(0), TR(""), wx.wxITEM_SEPARATOR},     
+      {905, TR("List files on device")..KSC(905), TR("List files on device")},
+      {906, TR("Reset device")..KSC(906), TR("Reset device")},
+      {907, TR("Query chip id")..KSC(907), TR("Query chip id")},
+      {908, TR("Query flash id")..KSC(908), TR("Query flash id")},
+      {909, TR("Query Heap")..KSC(909), TR("Query Heap")},    
       {0, TR("")..KSC(0), TR(""), wx.wxITEM_SEPARATOR},
-      {995, TR("Preferences")..KSC(995), TR("Preferences")},
+      {910, TR("Delete all lua/lc files on device")..KSC(906), TR("Delete all lua/lc files on device")},     
+      {0, TR("")..KSC(0), TR(""), wx.wxITEM_SEPARATOR},
+      {911, TR("Preferences")..KSC(910), TR("Preferences")},
     }
 
     menu:Append(id, "NodeMCU", zoomMenu)
 
-    ide:GetMainFrame():Connect(993, wx.wxEVT_COMMAND_MENU_SELECTED, function()
+    ide:GetMainFrame():Connect(903, wx.wxEVT_COMMAND_MENU_SELECTED, function()
       ide:ExecuteCommand('echo "executed Item 3"', ide:GetProject(), function(s) ide:GetOutput():Write(s) end)
     end)
 
@@ -42,7 +50,7 @@ esptoolRoute = /usr/bin/esptool.py
           "http://studio.zerobrane.com/documentation.html")
     end
 
-    ide:GetMainFrame():Connect(995, wx.wxEVT_COMMAND_MENU_SELECTED,
+    ide:GetMainFrame():Connect(911, wx.wxEVT_COMMAND_MENU_SELECTED,
       function ()
         local editor = LoadFile(nodemcuConfigFile)
         if editor and editor:GetLength() == 0 then
