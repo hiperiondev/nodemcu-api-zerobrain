@@ -12,16 +12,17 @@ return {
     local menu = ide:FindTopMenu("&Project")
 
     local zoomMenu = ide:MakeMenu {
-      {0, TR("Item 1")..KSC(0)},
-      {0, TR("Item 2")..KSC(0)},
-      {0, TR("Item 3")..KSC(0)},
+      {991, TR("Item 1")..KSC(991), TR("Function Item 1"), wx.wxITEM_CHECK},
+      {992, TR("Item 2")..KSC(992), TR("Function Item 2"), wx.wxITEM_CHECK},
+      {0, TR("")..KSC(0), TR(""), wx.wxITEM_SEPARATOR},
+      {993, TR("Item 3")..KSC(993), TR("Function Item 4")},
     }
 
     menu:Append(id, "NodeMCU", zoomMenu)
 
-    --ide:GetMainFrame():Connect(id, wx.wxEVT_COMMAND_MENU_SELECTED, function()
-    --    ide:ExecuteCommand('make', ide:GetProject(), function(s) ide:GetOutput():Write(s) end)
-    --  end)
+    ide:GetMainFrame():Connect(993, wx.wxEVT_COMMAND_MENU_SELECTED, function()
+      ide:ExecuteCommand('echo "executed Item 3"', ide:GetProject(), function(s) ide:GetOutput():Write(s) end)
+    end)
 
     local tb = ide:GetToolBar()
     tool = tb:AddTool(id, "NodeMCU"..KSC(id), wx.wxBitmap({""}))
