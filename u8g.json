@@ -214,7 +214,7 @@
         "type": "function",
         "args": "(\"filename\": string [, \"mode\": string])",
         "returns": "(file|nil [, string])",
-        "valuetype": "_U8gDisp"
+        "valuetype": "U8gDisp"
       }
     }
   },
@@ -264,7 +264,7 @@
         "args": "(\"file\": file)",
         "returns": "(boolean|nil [, string, number])"
       },
- "drawFilledEllipse": {
+      "drawFilledEllipse": {
         "type": "method",
         "description": "See [u8glib drawFilledEllipse](\"https\"://github.com/olikraus/u8glib/wiki/userreference#drawfilledellipse).",
         "args": "(\"file\": file)",

@@ -7,7 +7,7 @@
         "type": "function",
         "args": "(\"filename \": string [, \"mode\": string])",
         "returns": "(file|nil [, string])",
-        "valuetype": "_CoapClient"
+        "valuetype": "CoapClient"
       },
 
       "Server": {
@@ -15,7 +15,7 @@
         "description": "Creates a CoAP server.",
         "args": "(\"filename\": string [, \"mode\": string])",
         "returns": "(file|nil [, string])",
-        "valuetype": "_CoapServer"
+        "valuetype": "CoapServer"
       },
 
       "crypto": {

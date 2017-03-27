@@ -8,7 +8,7 @@
         "description": "Creates a client.",
         "args": "(\"filename\": string [, \"mode\": string])",
         "returns": "(file|nil [, string])",
-        "valuetype": "_NetSocket"
+        "valuetype": "NetSocket"
       },
 
       "createServer": {
@@ -16,21 +16,21 @@
         "description": "Creates a server.",
         "args": "(\"filename\": string [, \"mode\": string])",
         "returns": "(file|nil [, string])",
-        "valuetype": "_NetServer"
+        "valuetype": "NetServer"
       },
 
       "dns": {
         "type": "function",
         "args": "(\"filename\": string [, \"mode\": string])",
         "returns": "(file|nil [, string])",
-        "valuetype": "_NetDns"
+        "valuetype": "NetDns"
       },
 
       "cert": {
         "type": "function",
         "args": "(\"filename\": string [, \"mode\": string])",
         "returns": "(file|nil [, string])",
-        "valuetype": "_NetCert"
+        "valuetype": "NetCert"
       }
     },
 

@@ -8,7 +8,7 @@
         "description": "Creates a MQTT client.",
         "args": "(\"filename\": string [, \"mode\": string])",
         "returns": "(file|nil [, string])",
-        "valuetype": "_MqttClient"
+        "valuetype": "MqttClient"
       }
     }
   },

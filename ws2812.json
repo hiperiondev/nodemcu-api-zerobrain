@@ -25,7 +25,7 @@
         "type": "function",
         "args": "(\"filename\": string [, \"mode\": string])",
         "returns": "(file|nil [, string])",
-        "valuetype": "_Ws2812Buffer"
+        "valuetype": "Ws2812Buffer"
       }
     }
   },
