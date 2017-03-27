@@ -1,0 +1,25 @@
+{
+  "adc": {
+    "type": "lib",
+    "childs": {
+
+      "force_init_mode": {
+        "type": "function",
+        "description": "adc_force_init_mode_desc",
+        "returns": "adc_force_init_mode_ret"
+      },
+
+      "read": {
+        "type": "function",
+        "description": "adc_read_desc",
+        "returns": "adc_read_ret"
+      },
+
+      "readvdd33": {
+        "type": "function",
+        "description": "adc_readdvdd33_desc",
+        "returns": "adc_readdvdd33_ret"
+      }
+    }
+  }
+}
